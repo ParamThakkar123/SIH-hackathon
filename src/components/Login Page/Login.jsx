@@ -1,8 +1,10 @@
 import React from 'react'
+import Header from '../Front Page/Front'
 
 const Login = () => {
   return (
     <div>
+      <Header/>
         <section className='bg-gray-100 min-h-screen flex items-center justify-center'>
             <div className='bg-gray-50 flex rounded-2xl shadow-lg max-w-3xl p-5'>
                 <div className='md:w-1/2 px-16'>

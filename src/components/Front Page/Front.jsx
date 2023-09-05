@@ -12,11 +12,11 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Mental health analysis using realtime audio', description: 'This model gives a complete analysis of your mental health by recording your voice in real time', href: '#', icon: ChartPieIcon },
-  { name: 'Mental health analysis using current pictures videos', description: 'This model gives a complete analysis of your mental health bu analyzing your look in photos and videos', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Mental health analysis using user content on social media', description: 'You show what you feel on the social media. This model analyses your feeling based on the content you post on social media', href: '#', icon: FingerPrintIcon },
-  { name: 'Questionnaire', description: 'Answer few questions and check get a complete diagnosis for your mental health', href: '#', icon: SquaresPlusIcon },
-  { name: 'Mental health predictions on the basis of past medical records', description: 'upload your past medical records here and get a complete analysis of your current mental health', href: '#', icon: ArrowPathIcon },
+  { name: 'Mental health analysis using realtime audio', description: 'This model gives a complete analysis of your mental health by recording your voice in real time', href: '/voice', icon: ChartPieIcon },
+  { name: 'Mental health analysis using current pictures videos', description: 'This model gives a complete analysis of your mental health by analyzing your look in photos and videos', href: '/emotions', icon: CursorArrowRaysIcon },
+  { name: 'Mental health analysis using user content on social media', description: 'You show what you feel on the social media. This model analyses your feeling based on the content you post on social media', href: '/UserContent', icon: FingerPrintIcon },
+  { name: 'Questionnaire', description: 'Answer few questions and check get a complete diagnosis for your mental health', href: '/survey', icon: SquaresPlusIcon },
+  { name: 'Mental health predictions on the basis of past medical records', description: 'upload your past medical records here and get a complete analysis of your current mental health', href: '/medical', icon: ArrowPathIcon },
 ]
 
 function classNames(...classes) {
@@ -95,10 +95,16 @@ export default function Header() {
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Company
           </a>
+          <a href="/home" className="text-sm ml-3 font-semibold leading-6 text-gray-900">
+            Home
+          </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+          <a href="/login" className="text-sm mr-6 font-semibold leading-6 text-gray-900">
+            Log in
+          </a>
+          <a href="/signup" className="text-sm font-semibold leading-6 text-gray-900">
+            Sign Up
           </a>
         </div>
       </nav>
