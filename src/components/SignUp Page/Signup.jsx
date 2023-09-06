@@ -1,10 +1,8 @@
 import React from 'react'
-import Header from '../Front Page/Front'
 
 const Signup = () => {
   return (
     <div className='min-h-screen'>
-        <Header/>
         <div className='container mx-auto mt-20'>
             <div className='w-8/12 bg-white rounded-xl mx-auto shadow-lg flex flex-col lg:flex-row'>
             <div className='w-1/2 py-16 px-12'>
