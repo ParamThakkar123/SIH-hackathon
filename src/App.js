@@ -20,12 +20,14 @@ import Mood from './components/Questionnaire/Mood'
 import ODD from './components/Questionnaire/ODD'
 import Psychosis from './components/Questionnaire/Psychosis'
 import SUD from './components/Questionnaire/SUD'
+import Page from './components/Front Page/Page'
 
 const App = () => {
   return (
     <div>
       <Header/>
       <Routes>
+        <Route path='/home' Component={Page}/>
         <Route path='/sud' Component={SUD}/>
         <Route path='/eating' Component={Eating}/>
         <Route path='/schizophrenia' Component={Schizophrenia}/>
