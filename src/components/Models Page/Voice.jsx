@@ -1,4 +1,6 @@
 import React from 'react'
+import { useState } from 'react';
+import useSpeechRecognition from 'react-speech-recognition'
 
 const Voice = () => {
    const [text, setText] = useState('Start Recording');
