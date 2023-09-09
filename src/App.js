@@ -27,7 +27,7 @@ const App = () => {
     <div>
       <Header/>
       <Routes>
-        <Route path='/home' Component={Page}/>
+        <Route path='*' Component={Page}/>
         <Route path='/sud' Component={SUD}/>
         <Route path='/eating' Component={Eating}/>
         <Route path='/schizophrenia' Component={Schizophrenia}/>
@@ -43,7 +43,7 @@ const App = () => {
         <Route path='/login' Component={Login}/>
         <Route path='/survey' Component={Survey}/>
         <Route path='/signup' Component={Signup}/>
-        <Route path='/emotion' Component={Emotion}/>
+        <Route path='/emotions' Component={Emotion}/>
         <Route path='/medical' Component={Medical}/>
         <Route path='/UserContent' Component={UserContent}/>
         <Route path='/voice' Component={Voice}/>

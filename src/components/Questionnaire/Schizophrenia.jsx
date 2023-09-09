@@ -2,7 +2,9 @@ import React from 'react'
 
 const Schizophrenia = () => {
   return (
-    <div>Schizophrenia</div>
+    <div>
+      <h1 className='text-center text-3xl mt-10'>Schizophrenia Test</h1>
+    </div>
   )
 }
 

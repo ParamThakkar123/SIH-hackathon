@@ -2,7 +2,9 @@ import React from 'react'
 
 const Specific = () => {
   return (
-    <div>Specific</div>
+    <div>
+      <h1 className='text-center text-3xl mt-10'>Specific Phobia Test</h1>
+    </div>
   )
 }
 
