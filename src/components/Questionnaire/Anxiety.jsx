@@ -2,7 +2,9 @@ import React from 'react'
 
 const Anxiety = () => {
   return (
-    <div>Anxiety</div>
+    <div>
+      <h1 className='text-center text-3xl mt-10'>Anxiety Test</h1>
+    </div>
   )
 }
 
