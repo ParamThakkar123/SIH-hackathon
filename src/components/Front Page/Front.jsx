@@ -47,7 +47,7 @@ export default function Header() {
           </div>
           <Popover.Group className="hidden lg:flex lg:gap-x-12">
             <Popover className="relative">
-              <Popover.Button className="flex text-center text-xl pl-3 pr-3 pt-2 pb-2 font-semibold leading-6 inline-block rounded-lg hover:bg-white hover:text-indigo-500 ease-in-out duration-300">
+              <Popover.Button className="flex text-center text-xl pl-3 pr-3 pt-2 pb-2 font-semibold leading-6 rounded-lg hover:bg-white hover:text-indigo-500 ease-in-out duration-300">
                 Product
                 <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
               </Popover.Button>
