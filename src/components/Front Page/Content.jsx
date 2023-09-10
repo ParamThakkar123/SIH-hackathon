@@ -18,9 +18,6 @@ const Content = () => {
                     <img src="./images/brain.png" alt="hello.jpg" className='rounded-2xl' />
                 </div>
             </div>
-            <div className='mt-10 w-80 shadow-md p-5 rounded-lg text-center text-black inline-block bg-white text-xl hover:text-indigo-900 ease-in-out duration-200 hover:font-bold'>
-                <a href="/survey" className=''>Let's solve your problem</a>
-            </div>
         </div>
         <div className='mt-20'>
             <div>
