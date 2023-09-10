@@ -1,9 +1,6 @@
 import React from 'react'
 import Survey from './components/Questionnaire/survey'
 import { Route, Routes } from 'react-router-dom'
-import Login from './components/Login Page/Login'
-import Header from './components/Front Page/Front'
-import Signup from './components/SignUp Page/Signup'
 import Emotion from './components/Models Page/Emotion'
 import Medical from './components/Models Page/Medical'
 import UserContent from './components/Models Page/UserContent'
@@ -21,6 +18,7 @@ import ODD from './components/Questionnaire/ODD'
 import Psychosis from './components/Questionnaire/Psychosis'
 import SUD from './components/Questionnaire/SUD'
 import Page from './components/Front Page/Page'
+import Header from './components/Front Page/Front'
 
 const App = () => {
   return (
@@ -40,9 +38,7 @@ const App = () => {
         <Route path='/panic' Component={Panic}/>
         <Route path='/bipolar' Component={Bipolar}/>
         <Route path='/ptsd' Component={PTSD}/>
-        <Route path='/login' Component={Login}/>
         <Route path='/survey' Component={Survey}/>
-        <Route path='/signup' Component={Signup}/>
         <Route path='/emotions' Component={Emotion}/>
         <Route path='/medical' Component={Medical}/>
         <Route path='/UserContent' Component={UserContent}/>
