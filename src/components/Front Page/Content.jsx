@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 const Content = () => {
   return (
     <div className='font-sans bg-gray-900'>
-        <div className='container pt-16 ml-5 mr-5 shadow-xl pr-14 pb-20 pl-14 bg-indigo-500 rounded-3xl'>
+        <div className='pt-16 shadow-xl ml-5 mr-5 pr-14 pb-20 pl-14 bg-indigo-500 rounded-3xl'>
             <div className='text-white flex'>
                 <div className='pr-14 md:w-3/5'>
                     <h1 className='mb-10 text-5xl font-bold'>Mental Health Assesment</h1>
