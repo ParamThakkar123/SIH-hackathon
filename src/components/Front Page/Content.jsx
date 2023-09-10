@@ -22,25 +22,25 @@ const Content = () => {
         <div className='mt-20'>
             <div>
                 <h2 className='ml-20 mr-20 mt-8 text-4xl font-semibold text-gray-200'>How Does this Work ?</h2>
-                <p className='ml-20 mt-4 mr-20 text-2xl text-gray-400'>After completing your student mental health assessment, you'll gain access to valuable information, resources, and tools aimed at enhancing your understanding and well-being.</p>
+                <p className='ml-20 mt-4 mr-20 text-2xl text-gray-300'>After completing your student mental health assessment, you'll gain access to valuable information, resources, and tools aimed at enhancing your understanding and well-being.</p>
 
                 <h2 className='ml-20 mr-20 mt-8 text-4xl font-semibold text-gray-200'>How Can Online Mental Health Testing Help Students ?</h2>
-                <p className='ml-20 mt-4 mr-20 text-2xl text-gray-400'>Online mental health testing serves as a helpful tool to gain insights into your mental well-being. It can provide guidance and resources to address various challenges that students often encounter.</p>
+                <p className='ml-20 mt-4 mr-20 text-2xl text-gray-300'>Online mental health testing serves as a helpful tool to gain insights into your mental well-being. It can provide guidance and resources to address various challenges that students often encounter.</p>
 
                 <h2 className='ml-20 mr-20 mt-8 text-4xl font-semibold text-gray-200'>Understanding Your Student Mental Health Test Results</h2>
-                <p className='ml-20 mt-4 mr-20 text-2xl text-gray-400'>Your test results offer a snapshot of your mental health. If they suggest you may be experiencing mental health symptoms, consider sharing them with a mental health provider, like a counselor or therapist. They can provide a comprehensive assessment and discuss strategies to help you feel better.</p>
+                <p className='ml-20 mt-4 mr-20 text-2xl text-gray-300'>Your test results offer a snapshot of your mental health. If they suggest you may be experiencing mental health symptoms, consider sharing them with a mental health provider, like a counselor or therapist. They can provide a comprehensive assessment and discuss strategies to help you feel better.</p>
 
                 <h2 className='ml-20 mr-20 mt-8 text-4xl font-semibold text-gray-200'>Important Note: We Are Here to Inform</h2>
-                <p className='ml-20 mt-4 mr-20 text-2xl text-gray-400'>Please be aware that this website serves as an informational resource and not a crisis support line. If you require immediate assistance, reach out to the Suicide & Crisis Lifeline</p>
+                <p className='ml-20 mt-4 mr-20 text-2xl text-gray-300'>Please be aware that this website serves as an informational resource and not a crisis support line. If you require immediate assistance, reach out to the Suicide & Crisis Lifeline</p>
             </div>
             <div className='mt-20'>
                 <h3 className='ml-20 mr-20 mt-8 text-4xl font-semibold text-gray-200'>What We Offer:</h3>
                 <h2 className='ml-20 mr-20 mt-8 text-2xl font-semibold text-gray-200'>Resources and Insights : </h2>
-                <p className='ml-20 mt-4 mr-20 text-xl text-gray-400'>Access articles, tools, and tips for managing student life and mental health.</p>
+                <p className='ml-20 mt-4 mr-20 text-xl text-gray-300'>Access articles, tools, and tips for managing student life and mental health.</p>
                 <h2 className='ml-20 mr-20 mt-8 text-2xl font-semibold text-gray-200'>Support and Assistance</h2>
-                <p className='ml-20 mt-4 mr-20 text-xl text-gray-400'>Discuss your problems ,get their solutions and cure yourself.</p>                    
+                <p className='ml-20 mt-4 mr-20 text-xl text-gray-300'>Discuss your problems ,get their solutions and cure yourself.</p>                    
                 <h3 className='ml-20 mr-20 mt-8 text-4xl font-semibold text-gray-200'>Get Help : </h3>
-                <p className='ml-20 mt-4 mr-20 text-xl text-gray-400'>Reach out to professionals and explore mental health services available to you.</p>
+                <p className='ml-20 mt-4 mr-20 text-xl text-gray-300'>Reach out to professionals and explore mental health services available to you.</p>
             </div>
         </div>
     </div>
