@@ -1,4 +1,5 @@
 import React from 'react'
+import { quiz2 } from './Specific'
 
 const Specific = () => {
   return (
