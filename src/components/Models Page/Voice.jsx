@@ -1,28 +1,26 @@
-import React from 'react'
-import { useState } from 'react';
-import useSpeechRecognition from 'react-speech-recognition'
+import React from 'react';
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
-const Voice = () => {
-   const [text, setText] = useState('Start Recording');
-    const {
-      transcript, listening, resetTranscript, browserSupportsSpeechRecognition
-    } = useSpeechRecognition();
-  
-    if(!browserSupportsSpeechRecognition){
-      return <span>Browser doesn't support speech recognition</span>
-    }
+const Dictaphone = () => {
+  const {
+    transcript,
+    listening,
+    resetTranscript,
+    browserSupportsSpeechRecognition
+  } = useSpeechRecognition();
+
+  if (!browserSupportsSpeechRecognition) {
+    return <span>Browser doesn't support speech recognition.</span>;
+  }
+
   return (
     <div>
-      <h1 className='text-center text-4xl mt-10 mb-10 capitalize'>mental health recognition using voice in real-time</h1>
-      <p className='text-center text-2xl'>Here we used a deep learning model which is trained on a large dataset. This model predicts the mental state of a person using his/her voice which is recorded in real-time</p>
-
-      <div className='m-0 absolute inset-y-1/2 ml-20 bg-violet-400 translate-y-2/4'>
-      <button className='bg-violet-300 p-5 rounded-xl text-white font-bold'>Start Recording</button>
-      </div>
-
-      <div className='mic'></div>
+      <p>Microphone: {listening ? 'on' : 'off'}</p>
+      <button onClick={SpeechRecognition.startListening}>Start</button>
+      <button onClick={SpeechRecognition.stopListening}>Stop</button>
+      <button onClick={resetTranscript}>Reset</button>
+      <p>{transcript}</p>
     </div>
-  )
-}
-
-export default Voice
+  );
+};
+export default Dictaphone;
