@@ -29,13 +29,13 @@ export default function Header() {
       <header className="bg-gray-200 navbar text-indigo-950">
         <nav className="mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <Popover.Group className="hidden lg:flex">
-          <div className='text-center text-xl pl-6 pr-6 pt-2 pb-2 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
+          <div className='text-center text-xl pl-8 pr-8 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
               <a href="/home" className="">
                 Home
               </a>
           </div>
             <Popover className="relative">
-              <Popover.Button className="flex text-center text-xl pl-3 pr-3 pt-2 pb-2 mx-4 font-semibold leading-6 rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300">
+              <Popover.Button className="flex text-center text-xl pl-4 pr-4 pt-3 pb-3 mx-4 font-semibold leading-6 rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300">
                 Product
                 <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
               </Popover.Button>
@@ -70,17 +70,17 @@ export default function Header() {
               </Transition>
             </Popover>
             <div className='lg:flex lg:flex-1 lg:justify-end'>
-              <div className='text-center text-xl pl-6 pr-6 pt-2 pb-2 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
+              <div className='text-center text-xl pl-8 pr-8 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
               <a href="#" className="">
                 Features
               </a>
               </div>
-              <div className='text-center text-xl pl-6 pr-6 pt-2 pb-2 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
+              <div className='text-center text-xl pl-8 pr-8 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
               <a href="#" className="">
                 Resources
               </a>
               </div>
-              <div className='text-center text-xl pl-6 pr-6 pt-2 pb-2 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
+              <div className='text-center text-xl pl-8 pr-8 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
               <a href="#" className="">
                 About
               </a>
@@ -88,12 +88,12 @@ export default function Header() {
           </div>
           </Popover.Group>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <div className='text-center text-xl pl-3 pr-3 pt-2 pb-2 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
+            <div className='text-center text-xl pl-4 pr-4 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
             <a href="/signup" className="">
               Log in
             </a>
             </div> 
-            <div className='text-center text-xl pl-3 pr-3 pt-2 pb-2 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
+            <div className='text-center text-xl pl-4 pr-4 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
             <a href="/login" className="">
               Sign Up
             </a>

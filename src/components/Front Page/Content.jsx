@@ -4,14 +4,22 @@ import React, { useEffect } from 'react'
 const Content = () => {
   return (
     <div className='font-sans bg-gray-200'>
-        <div className='pt-16 shadow-xl ml-5 mr-5 pr-14 pb-20 pl-14 bg-indigo-500 rounded-3xl'>
+        <div >
+            <div className='h-screen relative bg-indigo-400'>
+                <iframe src='https://my.spline.design/lightingstudio1copy-c7be49be93bdf7523b6a69d92aef3286/' frameborder='0' width='100%' height='100%'></iframe>
+                <h1 className='ml-14 absolute top-20 text-9xl font-bold text-white'>HealWell</h1>
+                <div className='w-40 h-14 absolute bottom-0 right-0 bg-indigo-400'></div>
+            </div>
+        </div>
+        <div className='h-screen'>
+        <div className='mt-28 pt-16 shadow-xl ml-5 mr-5 pr-14 pb-20 pl-14 bg-indigo-950 rounded-3xl'>
             <div className='text-white flex'>
                 <div className='pr-14 md:w-3/5'>
                     <h1 className='mb-10 text-5xl font-bold'>Mental Health Assesment</h1>
                     <p className='text-2xl'>Your Path to Well-Being Welcome to a safe space for student mental health. We're here to support your journey towards well-being and success in your academic life.Discuss your problem with us and get the solution immediately.
                     Your anonymity is our priority. Feel free to express yourself openly and honestly – your responses will be confidential.</p>
                     <p className='text-2xl pt-10'>Mental health conditions, such as depression or anxiety, are real, common and treatable. And recovery is possible.</p>
-                    <div className='mt-20 w-80 shadow-md p-5 rounded-lg font-bold text-center text-black inline-block bg-white text-xl hover:text-indigo-500 ease-in-out duration-200'>
+                    <div className='mt-20 w-80 shadow-md p-5 rounded-lg font-bold text-center text-white inline-block bg-indigo-600 text-xl hover:text-indigo-950 hover:bg-indigo-100 ease-in-out duration-300'>
                     <a href="/survey" className=''>Let's solve your problem</a>
                     </div>
                 </div>
@@ -20,7 +28,8 @@ const Content = () => {
                 </div>
             </div>
         </div>
-        <div className='mt-20'>
+        </div>
+        <div className=''>
             <div>
                 <h2 className='ml-20 mr-20 mt-8 text-4xl font-semibold text-indigo-950'>How Does this Work ?</h2>
                 <p className='ml-20 mt-4 mr-20 text-2xl text-indigo-900'>After completing your student mental health assessment, you'll gain access to valuable information, resources, and tools aimed at enhancing your understanding and well-being.</p>
