@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import { quiz4 } from './Anxiety1';
+import { quiz3 } from './ADHD1';
 
-const Anxiety = () => {
+const ADHD = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
 
-  const {questions} = quiz4;
+  const {questions} = quiz3;
   const {question, answers} = questions[activeQuestion];
 
   const onClickNext = () => {
@@ -29,7 +29,7 @@ const Anxiety = () => {
 
   return (
     <div>
-      <h1>Schizophrenia Test</h1>
+      <h1>Attention Deficit HyperActivity Disorder Test</h1>
       {!showResult ? (
         <div>
           <div>
@@ -65,4 +65,4 @@ const Anxiety = () => {
   )
 }
 
-export default Anxiety
+export default ADHD
