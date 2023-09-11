@@ -29,7 +29,7 @@ const Anxiety = () => {
 
   return (
     <div>
-      <h1>Schizophrenia Test</h1>
+      <h1>Anxiety Test</h1>
       {!showResult ? (
         <div>
           <div>

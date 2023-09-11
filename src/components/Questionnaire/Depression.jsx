@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import { quiz8 } from './PTSD1';
+import { quiz6 } from './Eating1';
 
-const PTSD = () => {
+const Eating = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
 
-  const {questions} = quiz8;
+  const {questions} = quiz6;
   const {question, answers} = questions[activeQuestion];
 
   const onClickNext = () => {
@@ -29,7 +29,7 @@ const PTSD = () => {
 
   return (
     <div>
-      <h1>Post Traumatic Stress Disorder Test</h1>
+      <h1>Depression Test</h1>
       {!showResult ? (
         <div>
           <div>
@@ -65,4 +65,4 @@ const PTSD = () => {
   )
 }
 
-export default PTSD
+export default Eating
