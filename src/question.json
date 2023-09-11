@@ -475,5 +475,140 @@
       "question" : "Are you isolating from others ?",
       "answers" : ["Yes","No"]
     }
+  ],
+
+  "Mood disorder" :[
+    {
+      "question" : " Has there ever been a period of time when you were not your usual self and you felt so good or so hyper that other people thought you were not your normal self or you were so hyper that you got into trouble?",
+      "answers" :["Yes","No"]
+    },
+    {
+      "question" : "you were so irritable that you shouted at people or started fights or arguments?",
+      "answers" : ["Yes","No"]
+    },
+    {
+      "question" : "Do you feel tired or have low energy?",
+      "answers": ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "Have you lost interest in activities or hobbies that used to make you happy?",
+      "answers" : ["Yes","No"]
+    },
+    {
+      "question" : "Do you have trouble concentrating or paying attention in school or during other activities?",
+      "answers" : ["Yes","No"]
+    },
+    {
+      "question" : "Do you have trouble falling asleep or staying asleep?",
+      "answers" :[ "Not At All",
+      "Several Days",
+      "More Than Half The Days",
+      "Everyday"]
+    },
+    {
+      "question" : "Do you have trouble concentrating or paying attention in school or during other activities?",
+      "answers" : [ "Not At All",
+      "Several Days",
+      "More Than Half The Days",
+      "Everyday"]
+    },
+    {
+      "question" : "Were you were much more active or did many more things than current?",
+      "answers" : ["Yes","No"]
+    },
+    {
+      "question" : "Have you had thoughts about hurting yourself or others?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "Have you been experiencing physical symptoms like headaches or stomachaches that might be related to your feelings?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    }
+  ],
+
+  "substance abuse disorder" :[
+    {
+      "question" : "How often have you used alcohol or drugs in the past year?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How frequently do you use substances to cope with stress or difficult emotions?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How often have you tried to cut down or control your substance use but found it difficult?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How often have you experienced negative consequences because of your substance use?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How frequently have you lied to friends or family about your substance use?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How often do you spend a lot of time obtaining, using, or recovering from the effects of substances?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How often have you lost interest in activities or hobbies you used to enjoy because of substance use?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How often have you experienced withdrawal symptoms when you've tried to stop using substances (e.g., feeling sick, shaky, or anxious)?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How often have you engaged in risky behaviors while under the influence of substances?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How often do you spend time with peers who use substances?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    }
+  ],
+
+  "specific phobia disorder" :[
+    {
+      "question" : "How often do you feel extremely scared or anxious when you encounter the thing or situation that frightens you the most?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How often have you gone out of your way to avoid the thing or situation that scares you?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How much does your fear affect your daily life, such as going to school or spending time with friends?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How often have you experienced physical symptoms when confronting your fear (e.g., racing heart, sweating, shaking)?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How often do you experience nightmares or distressing thoughts about the thing or situation that scares you?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "How often do you feel a strong need to be reassured or comforted by someone when you're anxious about your fear?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "Do you experience intense fear or anxiety when you think about or see images related to your phobia, even if you're not in the actual situation?",
+      "answers" : ["Yes","No"]
+    },
+    {
+      "question" : "Have there been situations where your fear prevented you from doing something you wanted to do or that was expected of you?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    },
+    {
+      "question" : "Do you find it challenging to control your fear, even when you know it's irrational or excessive?",
+      "answers" : ["Yes","No"]
+    },
+    {
+      "question" : "How often do you feel embarrassed or ashamed because of your fear?",
+      "answers" : ["Never", "Rarely", "Often", "Sometimes", "Very Often"]
+    }
   ]
 }
