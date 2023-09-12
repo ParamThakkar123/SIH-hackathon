@@ -8,6 +8,7 @@ import Voice from './components/Models Page/Voice'
 import Schizophrenia from './components/Questionnaire/Schizophrenia'
 import ADHD from './components/Questionnaire/ADHD'
 import Bipolar from './components/Questionnaire/Bipolar'
+import Resources from './components/Resources Page/Resources'
 import Anxiety from './components/Questionnaire/Anxiety'
 import Eating from './components/Questionnaire/Eating'
 import PTSD from './components/Questionnaire/PTSD'
@@ -26,6 +27,7 @@ const App = () => {
       <Header/>
       <Routes>
         <Route path='*' Component={Page}/>
+        <Route path='/resources' Component={Resources}/>
         <Route path='/sud' Component={SUD}/>
         <Route path='/eating' Component={Eating}/>
         <Route path='/schizophrenia' Component={Schizophrenia}/>

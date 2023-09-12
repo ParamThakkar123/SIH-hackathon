@@ -29,23 +29,31 @@ const Bipolar = () => {
 
   return (
     <div>
-      <h1>Bipolar Disorder Test</h1>
+      <h1 className='text-3xl text-center mb-5'>Bipolar Disorder Test</h1>
       {!showResult ? (
         <div>
           <div>
-            <span>{addLeadingZero(activeQuestion + 1)}</span>
-            <span>{addLeadingZero(questions.length)}</span>
+            <div className='mb-5'>
+              <span className='text-xl'>{addLeadingZero(activeQuestion + 1)}</span>
+              <span className='text-xl'>/</span>
+              <span className='text-xl'>{addLeadingZero(questions.length)}</span>
+            </div>
             <div>
-              <h2>{question}</h2>
-              <ul>
+              <h2 className='text-2xl'>{question}</h2>
+              <ul className='mb-5'>
+                <div className='text-xl mb-5 mt-5'>
                 {answers.map((answer, index) => (
                   <li onClick={() => onAnswerSelected(answer, index)}
                   key={answer}
-                  className={selectedAnswerIndex === index ? 'selected-answer' : null}>{answer}</li>
+                  className={selectedAnswerIndex === index ? 'selected-answer' : null} >
+                    <input type="radio"/>
+                    {answer}
+                  </li>
                 ))}
+                </div>
               </ul>
               <div>
-                <button onClick={onClickNext}>
+                <button className='text-xl mt-20' onClick={onClickNext}>
                   {activeQuestion === questions.length-1 ? 'Finish' : 'Next'}
                 </button>
               </div>

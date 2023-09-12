@@ -76,7 +76,7 @@ export default function Header() {
               </a>
               </div>
               <div className='text-center text-xl pl-8 pr-8 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
-              <a href="#" className="">
+              <a href="/resources" className="">
                 Resources
               </a>
               </div>
