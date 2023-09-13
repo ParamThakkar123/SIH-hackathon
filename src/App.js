@@ -20,12 +20,30 @@ import Psychosis from './components/Questionnaire/Psychosis'
 import SUD from './components/Questionnaire/SUD'
 import Page from './components/Front Page/Page'
 import Header from './components/Front Page/Front'
+import Threapist from './components/Resources Page/Threapist'
+import Counselling from './components/Resources Page/Counselling'
+import Books from './components/Resources Page/Books'
+import Discussion from './components/Resources Page/Discussion'
+import Info from './components/Resources Page/Info'
+import Signup from './components/Sign Up Page/Signup'
+import Login from './components/Login Page/Login'
+import Therapistsign from './components/Sign Up Page/Therapistsign'
+import Studentsign from './components/Sign Up Page/Studentsign'
 
 const App = () => {
   return (
     <div>
       <Header/>
       <Routes>
+        <Route path='/tsign' Component={Therapistsign}/>
+        <Route path='/ssign' Component={Studentsign}/>
+        <Route path='/login' Component={Login}/>
+        <Route path='/signup' Component={Signup}/>
+        <Route path='/discussion' Component={Discussion}/>
+        <Route path='/books' Component={Books}/>
+        <Route path='/info' Component={Info}/>
+        <Route path='/counselling' Component={Counselling}/>
+        <Route path='/therapist' Component={Threapist}/>
         <Route path='*' Component={Page}/>
         <Route path='/resources' Component={Resources}/>
         <Route path='/sud' Component={SUD}/>

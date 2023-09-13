@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react'
 
-
 const Content = () => {
   return (
     <div className='font-sans bg-gray-200'>
-        <div >
+        <div>
             <div className='h-screen relative bg-indigo-400'>
                 <iframe src='https://my.spline.design/lightingstudio1copy-c7be49be93bdf7523b6a69d92aef3286/' frameborder='0' width='100%' height='100%'></iframe>
                 <h1 className='ml-14 absolute top-20 text-9xl font-bold text-white'>HealWell</h1>
