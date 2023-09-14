@@ -29,12 +29,14 @@ import Signup from './components/Sign Up Page/Signup'
 import Login from './components/Login Page/Login'
 import Therapistsign from './components/Sign Up Page/Therapistsign'
 import Studentsign from './components/Sign Up Page/Studentsign'
+import Profile from './components/Profile Page/Profile'
 
 const App = () => {
   return (
     <div>
       <Header/>
       <Routes>
+        <Route path='profile' Component={Profile}/>
         <Route path='/tsign' Component={Therapistsign}/>
         <Route path='/ssign' Component={Studentsign}/>
         <Route path='/login' Component={Login}/>
