@@ -30,12 +30,14 @@ import Login from './components/Login Page/Login'
 import Therapistsign from './components/Sign Up Page/Therapistsign'
 import Studentsign from './components/Sign Up Page/Studentsign'
 import Profile from './components/Profile Page/Profile'
+import Chatbot from './components/Chatbot Page/Chatbot'
 
 const App = () => {
   return (
     <div>
       <Header/>
       <Routes>
+        <Route path='/chat' Component={Chatbot}/>
         <Route path='profile' Component={Profile}/>
         <Route path='/tsign' Component={Therapistsign}/>
         <Route path='/ssign' Component={Studentsign}/>
