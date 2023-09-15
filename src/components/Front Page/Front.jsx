@@ -80,6 +80,7 @@ export default function Header() {
                 Resources
               </a>
               </div>
+              
               <div className='text-center text-xl pl-8 pr-8 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
               <a href="#" className="">
                 About
@@ -92,7 +93,12 @@ export default function Header() {
             <a href="/login" className="">
               Log in
             </a>
-            </div> 
+            </div>
+            <div className='text-center text-xl pl-8 pr-8 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
+              <a href="/profile" className="">
+                Profile
+              </a>
+              </div> 
             <div className='text-center text-xl pl-4 pr-4 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
             <a href="/signup" className="">
               Sign Up
