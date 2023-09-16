@@ -1,5 +1,6 @@
 import React from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+import Header from '../Front Page/Front';
 
 const Dictaphone = () => {
   const {
@@ -15,6 +16,7 @@ const Dictaphone = () => {
 
   return (
     <div>
+      <Header/>
       <p>Microphone: {listening ? 'on' : 'off'}</p>
       <button onClick={SpeechRecognition.startListening}>Start</button>
       <button onClick={SpeechRecognition.stopListening}>Stop</button>

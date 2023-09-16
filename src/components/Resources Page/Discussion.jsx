@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../Front Page/Front'
 
 const Discussion = () => {
   return (
-    <div>Discussion</div>
+    <div>
+      <Header/>
+      Discussion
+    </div>
   )
 }
 

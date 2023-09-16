@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import {motion as m} from 'framer-motion'
 import { AnimatePresence } from 'framer-motion'
+import Header from '../Front Page/Front'
 
 const Emotion = () => {
   const [data, setData] = useState("");
@@ -16,6 +17,7 @@ const Emotion = () => {
     animate={{opacity: 1}}
     transition={{duration:0.75, ease: "easeInOut"}}
     >
+      <Header/>
       <AnimatePresence>
       <h1 className='text-center text-4xl mt-10'>Mental Health Prediction using Machine Learning and Deep learning</h1>
       <p className='text-center text-2xl mt-5'>Our model predicts your mental state and mental health on the basis of your facial expressions in images</p>
