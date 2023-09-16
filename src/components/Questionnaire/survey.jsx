@@ -1,9 +1,11 @@
 import React from 'react'
+import Header from '../Front Page/Front'
 
 const Survey = () => {
   return (
     
     <div className='font-sans bg-gray-200 text-white'>
+      <Header/>
         <h1 className='capitalize text-center text-indigo-950 text-3xl pt-8'>take the mental health test</h1>
           <div class="px-8 py-8 flex flex-wrap">
 

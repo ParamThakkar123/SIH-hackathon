@@ -19,7 +19,6 @@ import ODD from './components/Questionnaire/ODD'
 import Psychosis from './components/Questionnaire/Psychosis'
 import SUD from './components/Questionnaire/SUD'
 import Page from './components/Front Page/Page'
-import Header from './components/Front Page/Front'
 import Threapist from './components/Resources Page/Threapist'
 import Counselling from './components/Resources Page/Counselling'
 import Books from './components/Resources Page/Books'
@@ -35,7 +34,6 @@ import Chatbot from './components/Chatbot Page/Chatbot'
 const App = () => {
   return (
     <div>
-      <Header/>
       <Routes>
         <Route path='/chat' Component={Chatbot}/>
         <Route path='profile' Component={Profile}/>

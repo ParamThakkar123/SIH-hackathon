@@ -1,8 +1,10 @@
 import React from 'react'
+import Header from '../Front Page/Front'
 
 const Info = () => {
   return (
     <div>
+      <Header/>
         <li>Post Traumatic Stress Disorder</li>
         <li>Attention Deficit Hyperactivity Disorder</li>
         <li>Paranoia</li>
