@@ -1,5 +1,4 @@
-{
-    "counselors" : [
+[
         {
             "id" : 1,
             "name" : "Albert Bandura",
@@ -75,5 +74,4 @@
             "name" : " Amelio D’Onofrio",
             "photo" : "https://news.fordham.edu/wp-content/uploads/2014/12/DOnofrio-Mercuri.jpg"
         }
-    ]
-}
+]

@@ -1,8 +1,7 @@
-{
-    "books": [
+[
         {
             "id" : 1,
-            "title" : "you are awesome",
+            "title" : "You are Awesome",
             "author" : "Matthew Syed",
             "photo" : "https://storage.googleapis.com/lr-assets/kids/covers/_hires_imported/9781526361158.jpg"
 
@@ -73,5 +72,4 @@
             "author" : "Anthony de Mello",
             "photo" : "https://m.media-amazon.com/images/I/81VBkdiytiL._SL1500_.jpg"
         }
-    ]
-}
+]

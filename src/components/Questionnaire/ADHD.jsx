@@ -39,7 +39,7 @@ const Bipolar = () => {
   const addLeadingZero = (number) => (number > 9 ? number : `0${number}`);
 
   return (
-    <div className='h-screen'>
+    <div data-aos="fade-down" data-aos-delay="300" className='h-screen'>
       <h1 className='text-3xl text-center mb-5 mt-14 text-indigo-950'>Bipolar Disorder Test</h1>
       <div className='mt-16 flex justify-center'>
       <div className='w-3/4 h-96 bg-gray-200 p-4 rounded-3xl relative'>

@@ -8,6 +8,8 @@ import {
   SquaresPlusIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 const products = [
   { name: 'Mental health analysis using realtime audio', description: 'This model gives a complete analysis of your mental health by recording your voice in real time', href: '/voice', icon: ChartPieIcon },
