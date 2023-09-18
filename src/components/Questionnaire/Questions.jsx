@@ -54,7 +54,7 @@ const Questions = () => {
             <div>
               <h2 className='text-xl'>{question}</h2>
               <ul className='mb-4'>
-                <div className='text-xl mb-4 mt-4'>
+                <div className='text-xl mb-4 mt-4 grid grid-cols-2'>
                 {answers.map((answer, index) => (
                   <li onClick={() => onAnswerSelected(answer, index)}
                   key={answer}
