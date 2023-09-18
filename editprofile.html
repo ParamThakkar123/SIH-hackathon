@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="edit_profile_style.css">
+  <link rel="stylesheet" href="icon_style_2.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="navbar-text">Students Mental Health Survey</div>
+        <img src="images/user.png" class="user-pic-top" onclick="toggleMenu()">
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="images/user.png" class="user-pic-bottom">
+              <h3>Jishnu Jayant Bandodkar</h3>
+            </div>
+            <hr>
+            <a href="viewprofile.html" class="sub-menu-link">
+              <img src="images/profile.png">
+              <p>View Profile</p>
+              <span>></span>
+            </a>
+            <a href="editprofile.html" class="sub-menu-link">
+              <img src="images/edit profile.png">
+              <p>Edit Profile</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="images/delete account.png">
+              <p>Delete Account</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="images/logout.png">
+              <p>Logout</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+        <script src="script.js"></script>
+      </div>
+    </div>
+  </header>
+  <nav class="additional-navbar">
+    <!-- <a href="resources.html">Resources</a> -->
+    <!-- <span class="nav-separator">|</span> -->
+    <!-- <a href="health.html">Understand about Student Mental Health</a>
+    <span class="nav-separator">|</span> -->
+    <a href="about.html">About Us</a>
+    <!-- <span class="nav-separator">|</span> -->
+    <a href="faq.html">FAQs</a>
+  </nav>
+  <div class="container">
+    <h1>Edit Profile</h1>
+    <form action="/users/varun35/edit" accept-charset="UTF-8" method="post" id="user-personal-info-form"
+      enctype="multipart/form-data" class="form-new incomplete">
+      <div>
+        <h3>Personal Information</h3><br>
+        <div class="row" id="edit-name-wrapper">
+          <div class="large-8 columns"> <label for="edit-name">Name : <span class="form-required"> * </span></label>
+            <input type="text" maxlength="128" name="name" id="edit-name" size="60" placeholder="Enter your name here"
+              class="form-text required" required>
+          </div>
+        </div>
+        <div class="row" id="edit-user-name-wrapper">
+          <div class="large-8 columns"> <label for="edit-user-name">Username : </label> <input type="text"
+              maxlength="128" name="username" id="edit-username" size="60" placeholder="Enter your username here"
+              class="form-text required">
+          </div>
+        </div>
+        <div class="row" id="edit-user-dob-wrapper">
+          <div class="large-8 columns"> <label for="edit-user-age-group">Age-Group : <span class="form-required"> *
+              </span></label>
+            <select name="age-group" required>
+              <option value="default">Select your age-group</option>
+              <option value="below 12">Below 12</option>
+              <option value="12-18">12-18</option>
+              <option value="18 above">18 above</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-8 columns"><label>Gender : <span class="form-required"> * </span></label>
+            <div class="form-radios">
+              <div class="form-item" id="edit-user-gender-0-wrapper">
+                <label class="option" for="edit-user-gender-0"><input type="radio" id="edit-user-gender-0"
+                    name="user_gender" value="female" class="form-radio" required>
+                  <span class="values">Female</span>
+                </label>
+              </div>
+              <div class="form-item" id="edit-user-gender-1-wrapper">
+                <label class="option" for="edit-user-gender-1"><input type="radio" id="edit-user-gender-1"
+                    name="user_gender" value="1" class="form-radio" required>
+                  <span class="values">Male</span>
+                </label>
+              </div>
+              <div class="form-item" id="edit-user-gender-2-wrapper">
+                <label class="option" for="edit-user-gender-2"><input type="radio" id="edit-user-gender-2"
+                    name="user_gender" value="2" class="form-radio" required>
+                  <span class="values">Other</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="edit-name-wrapper">
+          <div class="large-8 columns"> <label for="edit-school-name">School/College Name : <span class="form-required">
+                * </span></label> <input type="text" maxlength="128" name="school-name" id="edit-school-name" size="60"
+              placeholder="Enter your school or college name here" class="form-text required" required>
+          </div>
+        </div>
+        <div class="row" id="edit-user-phno-wrapper">
+          <div class="large-8 columns"> <label for="edit-user-phno">Personal Contact Number : <span
+                class="form-required"> * </span></label>
+            <input type="tel" maxlength="10" name="user_phno" id="edit-user-phno" size="60"
+              placeholder="Enter your contact number" pattern="^\d{10}$" class="form-text" required>
+            <span class="description"><strong>*Note : </strong>Please enter phone number without your country
+              code &amp; leading 0</span>
+          </div>
+        </div>
+        <div class="row" id="edit-user-parentcontact-wrapper">
+          <div class="large-8 columns"> <label for="edit-user-parentcontact">Parent/Guardian Contact number : <span
+                class="form-required"> * </span></label>
+            <input type="tel" maxlength="10" name="user_parent_number" id="edit-user-parentcontact" size="60"
+              placeholder="Enter your parent's or guardian's contact number" pattern="^\d{10}$" class="form-text"
+              required>
+            <span class="description"><strong>*Note : </strong>Please enter phone number without your country
+              code &amp; leading 0</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-8 columns"> <label for="edit-personal-mail">Personal Email address : <span
+                class="form-required"> * </span></label> <input type="email" maxlength="150" name="personal-email"
+              id="edit-personal-email" size="150" placeholder="Enter your email address here" class="form-text required"
+              required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-8 columns"> <label for="edit-parents-mail">Parent/Guardian Email address : <span
+                class="form-required"> * </span></label> <input type="email" maxlength="150" name="parent-email"
+              id="edit-parent-email" size="150" placeholder="Enter your parent's or guardian's email address here"
+              class="form-text required" required>
+          </div>
+        </div>
+        <div class="row" id="edit-geolocation-wrapper">
+          <div class="large-8 columns">
+            <label for="edit-address">Your Address : </label><br>
+            <textarea name="address" rows="4" cols="50" id="address" maxlength="100" size="100" class="address">
+              Enter your address here  
+            </textarea>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <span class="large-12 columns"><input type="submit" name="op" id="edit-save-button" class="edit-button"
+            value="Save" class="form-submit button blue"></span>
+        <span class="large-12 columns"><input type="reset" name="op" id="edit-reset-button" class="edit-button"
+            value="Reset" class="form-submit button blue"></span>
+      </div>
+      <input type="hidden" name="form_build_id" id="form-zhRv83KfnK4RNlwTqp-Rcc5grLbQhywXjJgXsVFdl34"
+        value="form-zhRv83KfnK4RNlwTqp-Rcc5grLbQhywXjJgXsVFdl34">
+      <input type="hidden" name="form_token" id="edit-user-personal-info-form-form-token"
+        value="b48b366887b3cbbe15fb8e08775c8a1c">
+      <input type="hidden" name="form_id" id="edit-user-personal-info-form" value="user_personal_info_form">
+
+  </div>
+  </form>
+
+</body>
+
+</html>
