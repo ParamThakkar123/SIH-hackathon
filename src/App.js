@@ -30,13 +30,15 @@ import Therapistsign from './components/Sign Up Page/Therapistsign'
 import Studentsign from './components/Sign Up Page/Studentsign'
 import Profile from './components/Profile Page/Profile'
 import Chatbot from './components/Chatbot Page/Chatbot'
+import Questions from './components/Questionnaire/Questions'
 
 const App = () => {
   return (
     <div>
       <Routes>
+        <Route path='/ques' Component={Questions}/>
         <Route path='/chat' Component={Chatbot}/>
-        <Route path='profile' Component={Profile}/>
+        <Route path='/profile' Component={Profile}/>
         <Route path='/tsign' Component={Therapistsign}/>
         <Route path='/ssign' Component={Studentsign}/>
         <Route path='/login' Component={Login}/>

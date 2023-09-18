@@ -15,7 +15,7 @@ const products = [
   { name: 'Mental health analysis using realtime audio', description: 'This model gives a complete analysis of your mental health by recording your voice in real time', href: '/voice', icon: ChartPieIcon },
   { name: 'Mental health analysis using current pictures videos', description: 'This model gives a complete analysis of your mental health by analyzing your look in photos and videos', href: '/emotions', icon: CursorArrowRaysIcon },
   { name: 'Mental health analysis using user content on social media', description: 'You show what you feel on the social media. This model analyses your feeling based on the content you post on social media', href: '/UserContent', icon: FingerPrintIcon },
-  { name: 'Questionnaire', description: 'Answer few questions and check get a complete diagnosis for your mental health', href: '/survey', icon: SquaresPlusIcon },
+  { name: 'Questionnaire', description: 'Answer few questions and check get a complete diagnosis for your mental health', href: '/ques', icon: SquaresPlusIcon },
   { name: 'Mental health predictions on the basis of past medical records', description: 'upload your past medical records here and get a complete analysis of your current mental health', href: '/medical', icon: ArrowPathIcon },
 ]
 

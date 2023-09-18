@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import {motion, useInView, useAnimation} from 'framer-motion';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

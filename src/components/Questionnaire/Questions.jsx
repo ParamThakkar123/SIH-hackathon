@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import { quiz5 } from './Bipolar1';
+import { quiz20 } from './quiz20';
 
-const Bipolar = () => {
+const Questions = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [showResult, setShowResult] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
 
-  const {questions} = quiz5;
+  const {questions} = quiz20;
   const {question, answers} = questions[activeQuestion];
 
   const onClickNext = () => {
@@ -40,7 +40,7 @@ const Bipolar = () => {
 
   return (
     <div className='h-screen'>
-      <h1 className='text-3xl text-center mb-5 mt-14 text-indigo-950'>Substance Use Disorder Test</h1>
+      <h1 className='text-3xl text-center mb-5 mt-14 text-indigo-950'>Mental Health Screening</h1>
       <div className='mt-16 flex justify-center'>
       <div className='w-3/4 h-96 bg-gray-200 p-8 rounded-3xl relative'>
       {!showResult ? (
@@ -82,6 +82,7 @@ const Bipolar = () => {
           <p>
             Total Question : <span>{questions.length}</span>
           </p>
+          <a href="/survey">Take Disorder Specific Test</a>
         </div>
       )
       }
@@ -91,4 +92,4 @@ const Bipolar = () => {
   )
 }
 
-export default Bipolar
+export default Questions
