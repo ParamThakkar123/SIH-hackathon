@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    background-color: #d3e5f1;
+}
+
+header {
+    background-color: #ca90fd6a;
+    padding: 7px 0;
+}
+
+.navbar-container {
+    max-width: 900px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    background-color: #aa6fdec2;
+    border-radius: 25px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    white-space: nowrap;
+    margin-left: 250px;
+    margin-top: 18px;
+    padding-top: 4px;
+}
+
+.additional-navbar {
+    background-color: #8754bc;
+}
+
+.additional-navbar ul {
+    overflow: auto;
+    margin-top: 0px;
+}
+
+.additional-navbar li {
+    list-style: none;
+    float: left;
+    padding: 20px 45px;
+}
+
+.additional-navbar li a {
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.additional-navbar li a:link {
+    color: rgb(137, 251, 137);
+    background-color: transparent;
+}
+
+.additional-navbar li a:hover {
+    color: rgb(238, 243, 99);
+    background-color: transparent;
+}
+
+.additional-navbar li a:visited {
+    color: orange;
+    background-color: transparent;
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+}
+
+.title {
+    color: blue;
+    font-weight: 300;
+    font-size: 25px;
+    margin-left: 45px;
+}
+
+hr {
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+.subtitles {
+    color: rgb(134, 39, 218);
+    font-weight: 200;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+table {
+    margin-left: 100px;
+    border-collapse: collapse;
+    width: 700px;
+    height: 200px;
+}
+
+table,
+th,
+td {
+    border: 1.5px solid black;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    color: rgb(87, 30, 139);
+    font-size: 17px;
+}
+
+th {
+    padding: 12px 15px;
+    color: black;
+    background-color: rgb(95, 100, 255);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+tr:hover {
+    background-color: aqua;
+}
