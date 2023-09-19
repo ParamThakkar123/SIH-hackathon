@@ -13,6 +13,33 @@ const Studentsign = () => {
     cpassword: "",
   });
 
+  const PostData = async (e) => {
+     e.preventDefault();
+     const {username, email, age, institute, Sphone, Pphone, Gphone, password, cpassword} = userRegister;
+     const res = await fetch('/ssign', {
+      method:"POST",
+      headers:{
+        "Content/type" : 'application/json',
+      },
+      body:JSON.stringify({
+        username, email, age, institute, Sphone, Pphone, Gphone, password, cpassword
+      })
+     });
+
+     const data = await data.json();
+
+     if(data.status === 422 || !data){
+      window.alert('Invalid Registration');
+      console.log('Invalid Registration');
+     }
+     else{
+      window.alert('Registration Successful');
+      console.log('Registration Successful');
+
+     }
+
+  }
+
   const handleInput = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -32,7 +59,7 @@ const Studentsign = () => {
           <div className="login-data register-data">
             <p className="bold-text">Create Your Account!</p>
             {/* form start  */}
-            <form action="#">
+            <form method='POST'>
               <div className="form">
                 <input
                   type="text"
@@ -172,6 +199,7 @@ const Studentsign = () => {
                 type="submit"
                 value="REGISTER"
                 className="btn register-btn"
+                onClick={PostData}
               />
             </form>
             {/* extra way to login  */}

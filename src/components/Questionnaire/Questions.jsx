@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import { quiz20 } from './quiz20';
+import QuizResult from './Questionscount';
 
 const Questions = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
+
+  const [score,setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
 
@@ -11,6 +14,7 @@ const Questions = () => {
   const {question, answers} = questions[activeQuestion];
 
   const onClickNext = () => {
+    updateScore();
     setSelectedAnswerIndex(null);
     if(activeQuestion != questions.length - 1){
       setActiveQuestion((prev) => prev + 1);
@@ -20,6 +24,12 @@ const Questions = () => {
       setShowResult(true);
     }
   }
+
+  const updateScore=()=>{
+    if(selectedAnswer===questions[activeQuestion].answers){
+        setScore(score+1);
+    }
+}
 
   const onClickPrev = () => {
     setSelectedAnswerIndex(null);
@@ -31,6 +41,8 @@ const Questions = () => {
       setShowResult(true);
     }
   }
+
+  
 
   const onAnswerSelected = (answers, index) => {
     selectedAnswerIndex(index);
@@ -50,21 +62,25 @@ const Questions = () => {
               <span className='text-xl '>{addLeadingZero(activeQuestion + 1)}</span>
               <span className='text-xl'>/</span>
               <span className='text-xl'>{addLeadingZero(questions.length)}</span>
+              
             </div>
+            
             <div>
               <h2 className='text-xl'>{question}</h2>
               <ul className='mb-4'>
                 <div className='text-xl mb-4 mt-4 grid grid-cols-2'>
                 {answers.map((answer, index) => (
                   <li onClick={() => onAnswerSelected(answer, index)}
-                  key={answer}
+                  key={question.id}
                   className={selectedAnswerIndex === index ? 'selected-answer' : null} >
                     <input type="radio"/>
                     {answer}
                   </li>
                 ))}
                 </div>
+                
               </ul>
+              
               <div className=''>
                 <button className='text-xl p-4 absolute bottom-8 left-8 bg-indigo-600 rounded-xl text-white' onClick={onClickPrev}>
                   {activeQuestion === questions.length+1 ? 'Finish' : 'Previous'}
