@@ -14,11 +14,15 @@ const Dictaphone = () => {
     return <span>Browser doesn't support speech recognition.</span>;
   }
 
+  const listen = () => {
+    SpeechRecognition.startListening({continuous: true, language: 'en-IN'})
+  }
+
   return (
     <div>
       <Header/>
       <p>Microphone: {listening ? 'on' : 'off'}</p>
-      <button onClick={SpeechRecognition.startListening}>Start</button>
+      <button onClick={listen}>Start</button>
       <button onClick={SpeechRecognition.stopListening}>Stop</button>
       <button onClick={resetTranscript}>Reset</button>
       <p>{transcript}</p>
