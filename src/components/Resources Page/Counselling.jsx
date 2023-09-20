@@ -10,11 +10,13 @@ const Counselling = () => {
         counselors.map(counselor => {
           return(
             <>
-            <div>
+            <div className='flex justify-center h-48'>
+            <div className='w-1/2 self-center text-center text-5xl m-2'>
               {counselor.name}
             </div>
-            <div>
-              <img src={counselor.photo}/>             
+            <div className='w-1/2 flex justify-center m-2 '>
+              <img className='w-36 rounded-full ' src={counselor.photo}/>             
+            </div>
             </div>
             </>
           )
