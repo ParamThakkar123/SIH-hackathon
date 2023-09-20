@@ -19,13 +19,16 @@ const Dictaphone = () => {
   }
 
   return (
-    <div>
+    <div >
       <Header/>
-      <p>Microphone: {listening ? 'on' : 'off'}</p>
-      <button onClick={listen}>Start</button>
-      <button onClick={SpeechRecognition.stopListening}>Stop</button>
-      <button onClick={resetTranscript}>Reset</button>
-      <p>{transcript}</p>
+      <div className='mt-20 flex flex-col justify-center text-center items-center'>
+      <p className='text-3xl'>Microphone: {listening ? 'on' : 'off'}</p>
+      <p className='h-40 text-lg text-left p-4 '>{transcript}</p>
+      <button className='text-white bg-indigo-500 rounded-3xl m-2 p-1 text-xl w-1/3' onClick={listen}>Start</button>
+      <button className='text-white bg-indigo-500 rounded-3xl m-2 p-1 text-xl w-1/3' onClick={SpeechRecognition.stopListening}>Stop</button>
+      <button className='text-white bg-indigo-500 rounded-3xl m-2 p-1 text-xl w-1/3' onClick={resetTranscript}>Reset</button>
+      
+      </div>
     </div>
   );
 };
