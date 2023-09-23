@@ -8,8 +8,8 @@ import {
   SquaresPlusIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import Aos from 'aos'
-import 'aos/dist/aos.css';
+import { useAuth0 } from '@auth0/auth0-react'
+import userEvent from '@testing-library/user-event'
 
 const products = [
   { name: 'Mental health analysis using realtime audio', description: 'This model gives a complete analysis of your mental health by recording your voice in real time', href: '/voice', icon: ChartPieIcon },
@@ -26,6 +26,7 @@ function classNames(...classes) {
 export default function Header() {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const {loginWithRedirect, logout, isAuthenticated, user} = useAuth0();
   return (
     <div>
       <header className="bg-gray-200 navbar text-indigo-950">
@@ -91,21 +92,9 @@ export default function Header() {
           </div>
           </Popover.Group>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <div className='text-center text-xl pl-4 pr-4 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
-            <a href="/login" className="">
-              Log in
-            </a>
-            </div>
-            <div className='text-center text-xl pl-8 pr-8 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
-              <a href="/profile" className="">
-                Profile
-              </a>
-              </div> 
-            <div className='text-center text-xl pl-4 pr-4 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
-            <a href="/signup" className="">
-              Sign Up
-            </a>
-            </div>
+          <div className='text-center text-xl pl-8 pr-8 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
+                        <button onClick={() => loginWithRedirect()}>Log In</button>
+                    </div>
           </div>
         </nav>
     </header>
