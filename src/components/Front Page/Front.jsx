@@ -26,7 +26,6 @@ function classNames(...classes) {
 export default function Header() {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const {loginWithRedirect, logout, isAuthenticated, user} = useAuth0();
   return (
     <div>
       <header className="bg-gray-200 navbar text-indigo-950">
@@ -93,7 +92,7 @@ export default function Header() {
           </Popover.Group>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <div className='text-center text-xl pl-8 pr-8 pt-3 pb-3 mx-4 font-semibold leading-6 inline-block rounded-lg hover:bg-indigo-500 hover:text-white ease-in-out duration-300'>
-                        <button onClick={() => loginWithRedirect()}>Log In</button>
+                        <button>Log In</button>
                     </div>
           </div>
         </nav>

@@ -7,6 +7,6 @@ const UserContent = () => {
       <Header/>
     </div>
   )
-}
+  }
 
 export default UserContent
